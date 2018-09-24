@@ -1,0 +1,652 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	width : 100%;
+	font-family: Calibri;
+	background-image: url('img/wave.png');
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 20%;
+	max-width:100%;
+	width : 100 %;
+	height : 100%;
+	border-radius: 0px 0px 5px 5px;
+	text-align: center;
+	padding: 20px;
+	background-color:#fff;
+}
+
+nav {
+	background-color:#666;
+	margin-top: 10px;
+	width: 60%;
+	min-width: 580px;
+	height: 52px;
+	display: inline-block;
+	margin-left: 20%;
+	color : black ;
+	position : center;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: auto;
+}
+
+
+
+
+#logo_exia { 
+	max-width: 100%;
+	height: auto;
+}
+
+#footer_exiastore{
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 600px;
+	width: 70%;
+	height: 10%;
+	border-radius: 0px 0px 5px 5px;
+	text-align: center;
+	padding: 15px;
+	color : black;
+	font-family: Verdana;
+	font-size : 70%;
+	background-color : &Hf2;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	display : inline-block;
+
+	background-repeat:no-repeat;
+}
+#footer_exiastore h2 {
+	font-family: Verdana;
+	font-size : 120%;
+	font-weight: bold;
+}
+
+.dropdown-menu {
+	overflow : auto;
+	height: 400px;
+}
+
+a {
+	color: rgb(30, 120, 240);
+}
+
+label {
+	display: block;
+	width: 300px;
+	float: left;
+	text-align: right;
+	padding-top: 7px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+	width: 200px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+input {
+	margin-left: 5px;
+}
+
+.obligatoire {
+	color: red;
+	font-size: 20px;
+}
+
+h3 a {
+	color : black;
+	text-decoration: none;
+}
+
+#liste_articles{
+	text-align:center;	
+	width:100%;
+	padding:0.4em 0 0.4em 0;
+	text-align:center;
+	border-top:1px solid #39a78a;
+	border-bottom:1px solid #39a78a;
+}
+#articles
+{
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	margin: 0px auto; 
+	width: 100%;
+}
+
+.article {
+	color : black;
+	display: inline-block;
+	width: 310px;
+	border: 1px dotted #39a78a;
+	border-radius: 5px;
+	margin : 5px 5px 5px 5px;
+	text-align: center;
+	background-color : rgba(255,255,255,0.5);
+	position: relative;
+	vertical-align: middle;
+}
+
+.article h3 {
+	height: 40px;
+}
+
+.divImageArticle {
+	margin-left:auto;
+	margin-right:auto;
+	height: 300px;
+}
+
+.imageArticle {
+	max-width: 275px;
+	max-height: 275px;	margin-left:auto;
+	margin-right:auto;
+}
+
+.imageArticleDetail {
+	width : 600px;
+	float: left;
+	margin-right: 20px;
+}
+
+@media (orientation: portrait) {
+
+	.imageArticleDetail {
+		width : 100%;
+		margin-bottom: 20px;
+	}
+
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+tr {
+	height: 50px;
+}
+td {
+	border : 1px solid black;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.message {
+	text-align: center;
+	border-radius: 5px;
+	width : 400px;
+	margin: auto;
+}
+
+.erreur {
+	color: red;
+	background-color: rgba(255, 0, 0, 0.3);
+	border: 1px solid red;
+}
+
+.ok {
+	color: green;
+	background-color: rgba(0, 255, 0, 0.3);
+	border: 1px solid red;
+}
+
+
+.pair {
+	background-color: rgb(200, 200, 200);
+}
+.impair {
+	background-color: rgb(170, 170, 170);
+}
+header{/*dimensions de l'image a revoir, integrer logo+titre+sous titre*/
+	height:150px;
+	background-image:url(img/header.jpg);/*image tout a droite*/
+	background-repeat:no-repeat;
+	background-position:right;
+	border-bottom:2px solid #39a78a;
+}
+header>h1, header>h2{/*pour référencement, fait "disparaitre" de l'écran*/
+	text-indent:-9999px;
+	position:fixed;	/* que ça ne joue pas sur la position du reste*/
+}
+#accueil{
+	position:absolute;	/* que ça ne joue pas sur la position du reste*/
+	margin-left:5em;
+	margin-top:1em;
+	display:block;
+	height:70px;
+	width:400px;
+	background-size:cover;
+	background-image:url(img/logotitre.png);
+	background-repeat:no-repeat;
+}
+
+/*********************************************************************************************/
+/*-------------------------------------partie panier-----------------------------------------*/
+/*																							 */
+#session{
+	width:50%;
+	float:right;
+	margin-right:10em;
+}
+li{
+	list-style:none;
+}
+.nav {
+	position:abolute;
+	left:0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.nav>li{
+	border-right:3px solid #39a78a;
+}
+#bienvenue{
+	font-style:italic;
+	font-size:11px;
+	border-right:none;
+}
+#insc{
+
+}
+#insc a{/*Pour les petites icones*/
+	padding-left:40px;
+	background-image:url(img/inscb.png);
+	background-repeat:no-repeat;
+}
+#insc:hover a{
+	background-image:url(img/insc.png);
+	background-repeat:no-repeat;
+	background-color:#39a78a;
+}
+#ident a{
+padding-left:40px;
+	background-image:url(img/identifb.png);
+	background-repeat:no-repeat;
+}
+#ident:hover a{
+	background-image:url(img/identif.png);
+	background-repeat:no-repeat;
+	background-color:#39a78a;
+}
+#panier>a{
+	padding-left:40px;
+	
+	background-image:url(img/panierb.png);
+	background-repeat:no-repeat;
+}
+#panier:hover>a{
+	background-image:url(img/panier.png);
+	background-repeat:no-repeat;
+	background-color:#39a78a;
+}
+.nav a {
+	width:100%;
+    display: block;
+    padding:.5em;
+    color: #11234b;
+    background: white;
+    text-decoration: none;
+}
+.nav p {
+	padding-top:1em;
+	padding-right:0.5em;
+    color: #11234b;
+    background-color: #fff;
+    text-decoration: none;
+}
+.nav-item {
+    float: left; /* Pour que les liens s’affichent horizontalement */
+	width:160px;
+}
+.nav-item:hover>a{
+    color: white;
+    background: #39a78a;
+    text-decoration: none;
+}
+.sub-nav {
+	width:163px;
+    position: absolute; /* Evite que la dimension du conteneur ne change quand la sous-liste est affichée */
+	border-left:3px solid #39a78a;
+	border-right:3px solid #39a78a;
+	margin-left:-3px;
+	background-color:#fff;
+}
+.sub-nav-item a, .sub-nav-item p{
+    position: absolute;
+    left: -10000px;/*le texte est déporté loin à gauche */
+}
+.nav-item:hover .sub-nav-item a, .nav-item:hover .sub-nav-item p{
+    position: static;
+    left: auto;
+    width: auto;
+    overflow: visible;
+}
+#acces_pan{
+	background-image:url(img/acceder_panier.png);
+	background-repeat:no-repeat;
+	height:40px;
+	background-position:50% 50%;
+}
+#acces_pan:hover{
+	background-image:url(img/acceder_panier_hover.png);
+	background-repeat:no-repeat;
+	height:40px;
+	background-position:50% 50%;
+}
+/*														nav									 */
+/*********************************************************************************************/
+
+.nav2 .active{
+	background-color:#39a78a;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.nav2{
+	display:block;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.nav2> ul >li{
+	display: inline-block;
+	width:25%;
+}
+.nav2 >ul>.navadmin{
+	width=600px;
+}
+.nav2> ul> li a:hover{
+	background-color:#39a78a;
+	color:#FFFFFF;
+}
+
+.nav2 >ul >li >a{
+	display:inline-block;
+	text-decoration:none;	
+	text-align:center;
+	color:#39a78a;
+	background-color:#FFFFFF;
+	width:100%;
+	line-height:30px;
+}
+#accueilnav{border-bottom:2px solid #4d7762;} 
+#cd{border-bottom:2px solid #747762;} 
+#dvd{border-bottom:2px solid #997762;} 
+#livre{border-bottom:2px solid #c97762;}
+/****sousnav placé APRES les éléments du nav****/
+.ssnav{
+	z-index:1;
+	list-style-type:none;
+	display:none;
+	position:absolute; /*pour que la liste n'occupe plus son espace et ne décale pas tout*/
+	border:2px solid #39a78a;
+	border-top:none;
+	background-color:#FFF;
+	width:48%;
+	left:27%;
+}
+.item{
+	margin:auto;
+	padding:0;
+}
+.item a {
+	display:block;
+	color:black;
+	text-decoration:none;
+	padding:5px; 
+ }
+.item a :hover{
+	background-color:#39a78a;
+	color:#FFFFFF;
+}
+.nav2 ul li:hover .ssnav {
+	display:block;
+ }
+ .nav2 ul li:hover .ssnav .item {
+	float:none;
+ }
+/*													main										 */
+/*********************************************************************************************/
+*{
+	font-family:Helvetica, sans-serif;
+}
+main{
+	background-color:#eee;
+}
+#listing{
+	text-align:center;
+}
+
+main h3{
+	text-align:center;
+	font-size:18px;
+}
+#highlight, #liste{
+	background-color:#fff;
+	margin-bottom:1em;
+	width:90%;
+	border:1px solid #39a78a;
+	margin-left:auto;
+	margin-right:auto;
+}
+.articles{
+	font-size:14px;
+	max-width:230px;
+	padding:1em;
+	height:400px;
+	display:inline-block;
+	padding-top:2em;
+	padding-bottom:2em;
+	margin-left:0.5em;
+}
+.divImageArticle{
+	max-width:100px;
+	margin:1em;
+}
+.vignette_prod img{
+	min-height:300px;
+	min-width:300px;
+	max-height:400px;
+	max-width:400px;
+	float:left;
+	margin-bottom:2em;
+}
+.infoprod{
+	margin-top:2em;
+}
+.infos>p{/*coupe les descriptifs trop longs et évite différence de taille entre les vignettes*/			
+	overflow:hidden;
+	min-height:75px;
+	max-height:75px;
+	text-overflow:ellipsis;
+}
+.infos a{
+	text-decoration:none;
+	color:#777;
+	font-size:12px;
+	margin-bottom:1em;
+}
+.infos a:hover{
+	text-decoration:underline;
+}
+.infos *{
+	display:block;
+	text-align:center;
+}
+.achat *{
+	display:inline-block;
+}
+.prix{
+	color: #F93020;
+	font-weight:bold;
+	font-size:20px;
+	margin-right:0.5em;
+}
+.ajout_pan{
+	width:145px;
+	height:40px;
+	background-image:url("img/Ajouter_panier.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.ajout_pan:hover{
+	width:145px;
+	height:40px;
+	background-image:url("img/Ajouter_panier_hover.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.stock{
+	margin-top:1em;
+	padding-top:0.5em;
+	border-top:1px dotted #39a78a;
+	font-size:11px;
+}
+
+#etoile{
+	width:250px;
+	font-size:30px;
+}
+#etoile label{
+	color:grey;
+	float:right;
+	width:30px;
+}
+#etoile input{
+	float:right;
+	width:30px;
+	position:absolute;
+	opacity:0;
+}
+#etoile label:hover,
+#etoile label:hover~label,
+#etoile input:checked~label
+{
+	color:orange;
+	cursor:pointer;
+	transition-property:color;
+	transition-duration:0.4s;
+}
+
+/*													commandes								 */
+/*********************************************************************************************/
+.pagecommande, .pageconnexion, .pagecompte, .pagepanier, .pageinscription{
+	margin-top:50px;
+	min-height:500px;
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+	border: 1px solid #39a78a;
+	border-radius: 5px;
+	padding:15px;
+
+}
+.pagearticle{
+	padding:15px;
+}
+.pageconnexion{
+	min-height:300px;
+	padding-top:100px;
+}
+/*													inscription								 */
+/*********************************************************************************************/
+/*													connexion								 */
+/*********************************************************************************************/
+
+/*													footer									 */
+/*********************************************************************************************/
+footer{
+	clear:both;
+	border-top:2px ridge #79e7ca;
+	padding-bottom:2em;
+	margin-top:10px;
+	background-color:#fff;
+}
+footer p{
+	display:inline;
+	color:#777;
+	margin-left:1em;
+}
+footer a,footer p{
+	font-family:Helvetica, sans-serif;
+	text-decoration:none;
+}
+
+#footer_main{
+	width:93%;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:2px ridge #79e7ca;
+	padding:1em;
+}
+#footer_links{
+	padding-top:0.5em;
+	margin-left:40px;
+	font-size:15px;
+	padding-top:1em;
+}
+#footer_links2{
+	padding-top:0.5em;
+	margin-left:40px;
+	font-size:12px;	
+	padding-top:1em;
+}
+#footer_links a{
+	color:#555;
+	margin-left:1.2em;
+}
+#footer_links2 a{
+	color:#777;
+	margin-left:1.2em;
+}
+/*----------------------------------------gestion des images réseaux sociaux----------------------------------*/
+footer #footer_main ul li{
+	list-style:none; 	
+	margin-left:2em;
+	display:inline-block;
+}
+footer #footer_main ul li .social{
+	background-image:url('img/social.jpg');										
+	height:45px;
+    width:43px;
+	display:inline-block;
+	background-repeat:no-repeat;
+}
+footer #footer_main ul li .social:hover, #accueilfoot:hover{
+	box-shadow:0 0 10px #39a78a;
+}
+#accueilfoot{
+	height:45px;
+	width:45px;
+	display:block;
+	background-image:url('img/logo.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#fb{									/*différente position sur l'image des réseaux sociaux/RSS*/
+	background-position:0 0;
+}
+#tweet{
+	background-position:-46px 0;
+}
+#rss{
+	background-position:-92px 0;
+}
+#and{
+	background-position:-138px 0;
+}
+/*----------------------------------------gestion des images réseaux sociaux----------------------------------*/
