@@ -3,7 +3,7 @@
   //Fonction pour récupérer la base de données
 function get_bdd() {
 	try {
-		return new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'root', 'Saturne@123');	
+		return new PDO('mysql:host=localhost;dbname=projetweb;charset=utf8', 'user', 'fgzefgsqifgqsdgf@è-èé"24646');	
 	} catch (Exception $e) {
 		die('Erreur : ' . $e->getMessage());
 	}
